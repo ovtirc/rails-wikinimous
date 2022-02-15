@@ -1,0 +1,14 @@
+<div>
+<h1>AnonWiki</h1>
+
+<%= link_to 'Create Article', new_article_path %>
+
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+
+<%= link_to "Back to articles", articles_path %>
+
+<%= link_to "Edit article", edit_article_path %>
+
+<%= link_to "Delete article", article_path(@article), method: :delete, data: {confirm: "Are you sure?" } %>
+</div>
